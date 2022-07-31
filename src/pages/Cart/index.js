@@ -24,7 +24,7 @@ export default function Cart() {
                 </td>
                 <td>
                   <strong>Teste Nome</strong>
-                  <span>R$20,00</span>
+                  <span>R$ 20,00</span>
                 </td>
                 <td>
                   <div>
@@ -32,12 +32,14 @@ export default function Cart() {
                       type="button"
                       onClick={() => console.log('decrement')}
                     >
+                      -
                     </button>
                     <input type="number" readOnly value="10" />
                     <button
                       type="button"
                       onClick={() => console.log('increment')}
                     >
+                      +
                     </button>
                   </div>
                 </td>
@@ -46,7 +48,7 @@ export default function Cart() {
                 </td>
                 <td>
                   <button type="button" onClick={() => console.log('remove')}>
-                    
+                    Remover
                   </button>
                 </td>
               </tr>
@@ -56,6 +58,11 @@ export default function Cart() {
       </div>
 
       <footer>
+        <Total>
+          <span>TOTAL</span>
+          <strong>R$ 20,00</strong>
+        </Total>
+
         <button
           type="button"
           onClick={() =>
@@ -66,13 +73,10 @@ export default function Cart() {
           }
         >
           {' '}
-          Finalizar pedido
+          Finalizar
         </button>
 
-        <Total>
-          <span>TOTAL</span>
-          <strong>R$20,00</strong>
-        </Total>
+        
       </footer>
     </Container>
   );

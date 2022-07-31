@@ -20,14 +20,13 @@ export const Container = styled.div`
     justify-content: space-between;
     align-items: center;
     button {
-      background: ${({ theme }) => theme.backgroundColor};
-      color: ${({ theme }) => theme.textColor};
       border: 0;
       border-radius: 4px;
       padding: 12px 20px;
+      width: 100%;
       font-weight: bold;
       text-transform: uppercase;
-      transition: background 0.2s;
+      transition: 0.2s;
       &:hover {
         filter: brightness(80%);
       }
@@ -81,12 +80,18 @@ export const PokeTable = styled.table`
 export const Total = styled.div`
   display: flex;
   align-items: baseline;
+  justify-content: space-between;
+  border-top: 1px solid #000;
+  margin: 5px 5px 0;
+  font-weight: 400
   span {
     color: #999;
     font-weight: bold;
+    font-size: 20px;
+    margin: 5px 20px;
   }
   strong {
-    font-size: 28px;
-    margin-left: 5px;
+    font-size: 20px;
+    margin: 5px 20px;
   }
 `;

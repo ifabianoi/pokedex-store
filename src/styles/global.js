@@ -11,7 +11,6 @@ export default createGlobalStyle`
   #root {
     max-width: 1360px;
     margin: 0 auto;
-    padding: 0 20px 50px;
   }
   body {
     background: #fff url(${body_bg});

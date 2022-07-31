@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom';
 
 import { ListItem, Loader } from './card.styles';
 import { capitalize } from '../../utils/capitalize';
-import { formatPrice } from '../../utils/formatPrice';
 import notfound from '../../assets/images/img404.jpg';
 import pokeball from '../../assets/images/pokeball_gray.png'
 import pokeload from '../../assets/images/pokeload.gif'

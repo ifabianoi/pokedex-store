@@ -44,15 +44,42 @@ export default function Details() {
             <h2>{pokemon.name}</h2>
             <span>{pokemon.price}</span>
           </div>
-          <div id="stats">
-            <h2>Stats</h2>
-            <div>
-              {pokemon.stats.map((s) => (
-                <li>
-                  <strong>{s.stat.name}:</strong>
-                  <span>{s.base_stat}</span>
-                </li>
-              ))}
+          <div id="character">
+            <div id="height">
+              <h2>Altura</h2>
+              <div>
+                  <li>
+                    {parseFloat(pokemon.height) / 10} M
+                  </li>
+              </div>
+            </div>
+            <div id="weight">
+              <h2>Peso</h2>
+              <div>
+                  <li>
+                    {parseFloat(pokemon.weight) / 10} Kg
+                  </li>
+              </div>
+            </div>
+            <div id="types">
+              <h2>Tipo</h2>
+              <div>
+                {pokemon.types.map((t) => (
+                  <li>
+                    <span>{t.type.name}</span>
+                  </li>
+                ))}
+              </div>
+            </div>
+            <div id="abilities">
+              <h2>Habilidades</h2>
+              <div>
+                {pokemon.abilities.map((a) => (
+                  <li>
+                    <span>{a.ability.name}</span>
+                  </li>
+                ))}
+              </div>
             </div>
           </div>
         </div>
@@ -62,6 +89,6 @@ export default function Details() {
       </footer>
     </Container>
   ) : (
-    <Loader>{notfound}</Loader>
+    <Loader />
   );
 }

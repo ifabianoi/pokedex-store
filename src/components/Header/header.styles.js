@@ -8,7 +8,6 @@ export const Container = styled.div`
   align-items: center;
   padding: 25px 0;
   background: #424242 url(${header_bg});
-  margin: 20px 0;
   img {
     max-width: 10rem;
   }
