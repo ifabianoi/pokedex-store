@@ -1,9 +1,14 @@
 import React, { useState, useEffect } from 'react';
-import axios from 'axios';
-import { MdAddShoppingCart } from 'react-icons/md';
+import { Link } from 'react-router-dom';
 
-import { ListItem } from './card.styles';
+import { ListItem, Loader } from './card.styles';
 import { capitalize } from '../../utils/capitalize';
+import { formatPrice } from '../../utils/formatPrice';
+import notfound from '../../assets/images/img404.jpg';
+import pokeball from '../../assets/images/pokeball_gray.png'
+import pokeload from '../../assets/images/pokeload.gif'
+
+import axios from 'axios';
 
 export default function Card({ url, price }) {
   const [pokemon, setPokemon] = useState({});
@@ -16,19 +21,25 @@ export default function Card({ url, price }) {
 
   return pokemon.name ? (
     <ListItem>
-      <img src={pokemon.sprites.front_default} alt={pokemon.name} />
-      <strong>{capitalize(pokemon.name)}</strong>
-      <span>{price}</span>
-
+      <Link to={`/details/${pokemon.id}`}>
+        <div id="link">
+          <img
+            src={pokemon.sprites.front_default || notfound}
+            alt={pokemon.name}
+          />
+          <strong>{capitalize(pokemon.name)}</strong>
+          <span>{price}</span>
+        </div>
+      </Link>
       <button type="button">
         <div>
-          <MdAddShoppingCart size={16} color="#fff" /> 2
+          <img src={pokeball} alt="Logo PokéDex" />
         </div>
 
-        <span>ADICIONAR AO CARRINHO</span>
+        <span>CAPTURAR</span>
       </button>
     </ListItem>
   ) : (
-    <p>Carregandp</p>
+    <Loader />
   );
 }

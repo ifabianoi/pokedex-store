@@ -1,4 +1,5 @@
 import { createGlobalStyle } from 'styled-components';
+import body_bg from '../assets/images/content_bg.png'
 
 export default createGlobalStyle`
   * {
@@ -13,14 +14,10 @@ export default createGlobalStyle`
     padding: 0 20px 50px;
   }
   body {
-    background: transparent url(../assets/images/content_bg.png) left top;
-    background-size: 100% 1px;
-    display: block;
-    margin: 0 auto;
-    overflow: hidden;
-    max-width: 1024px;
-    width: 100%;
-    -webkit-font-smoothing: antialiased;
+    background: #fff url(${body_bg});
+    font-size: 16px;
+    color: #000;
+    height: 100%;
   }
   body, input, button {
     font: 14px Roboto, sans-serif;

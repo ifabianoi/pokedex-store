@@ -1,11 +1,14 @@
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
+import header_bg from '../../assets/images/header_bg.png'
 
 export const Container = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 25px 0;
+  background: #424242 url(${header_bg});
+  margin: 20px 0;
   img {
     max-width: 10rem;
   }
