@@ -1,70 +1,88 @@
-# Getting Started with Create React App
+<h1 align="center">
+  React.JS: Loja Online by Gama Academy 
+</h1>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<p align="center">
+  <img alt="GitHub top language" src="https://img.shields.io/github/languages/top/ifabianoi/pokedex-store.svg">
 
-## Available Scripts
+  <img alt="Repository size" src="https://img.shields.io/github/repo-size/ifabianoi/pokedex-store.svg">
+  <a href="https://github.com/ifabianoi/pokedex-store/commits/master">
+    <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/ifabianoi/pokedex-store.svg">
+  </a>
 
-In the project directory, you can run:
+  <a href="https://github.com/ifabianoi/pokedex-store/issues">
+    <img alt="Repository issues" src="https://img.shields.io/github/issues/ifabianoi/pokedex-store.svg">
+  </a>
 
-### `npm start`
+</p>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+<h4 align="center">
+  Pokédex Store
+</h4>
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+<p align="center">
+  <a href="#rocket-technologies">Technologies</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-install">Install</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-install">How to use</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#memo-license">License</a>
+</p>
 
-### `npm test`
+<p align="center">
+  <a href="https://pokedex-store.netlify.app/" target="_blank">
+    <img alt="Demo on Netlify" src="https://res.cloudinary.com/lukemorales/image/upload/v1599785319/readme_logos/demo_on_netlify_umjmch.png">
+  </a>
+</p>
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+<p align="center">
+  
+[![Netlify Status](https://api.netlify.com/api/v1/badges/be0bf6d9-a909-423f-83c8-5b2a591b9a08/deploy-status)](https://app.netlify.com/sites/pokedex-store/deploys)
+  
+</p>
 
-### `npm run build`
+## :rocket: Technologies
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+This project was developed with the following technologies:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- [ReactJS](https://reactjs.org/)
+- [react-router-dom](https://github.com/ReactTraining/react-router)
+- [react-icons]()
+- [styled-components]()
+- [react-toastify]()
+- [sweetalert]()
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- [VS Code][vscode] with [EditorConfig][vceditconfig]
 
-### `npm run eject`
+### 📦 Install
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+```
+$ git clone https://github.com/ifabianoi/pokedex-store
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+$ npm install
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### 🔨 How to use
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Runs next which starts React.js in development mode
 
-## Learn More
+```bash
+$ npm start
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Runs next build which builds the application for production usage
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```bash
+$ npm build
+```
 
-### Code Splitting
+## :memo: License
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+This project is under the MIT license. See the [LICENSE](https://github.com/fabianoi/pokedex-store/blob/main/LICENSE) for more information.
 
-### Analyzing the Bundle Size
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Made with ♥ by Fabiano Pereira :wave: [Get in touch!](https://www.linkedin.com/in/ifabianoi/)
 
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+[vscode]: https://code.visualstudio.com/
+[yarn]: https://yarnpkg.com/
+[vceditconfig]: https://marketplace.visualstudio.com/items?itemName=EditorConfig.EditorConfig
+[vceslint]: https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint
