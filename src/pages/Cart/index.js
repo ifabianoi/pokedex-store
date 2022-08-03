@@ -67,7 +67,8 @@ export default function Cart() {
           type="button"
           onClick={() =>
             swal(
-              'Compra Finalizada',
+              'Parabéns',
+              'compra realizada.',
               'success',
             )
           }

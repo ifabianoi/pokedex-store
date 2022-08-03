@@ -211,8 +211,8 @@ export default function Store() {
               type="button"
               onClick={() =>
                 swal(
-                  'Compra Finalizada',
-                  '',
+                  'Parabéns',
+                  'compra realizada.',
                   'success',
                 )
               }
