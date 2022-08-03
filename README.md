@@ -76,7 +76,7 @@ $ npm build
 
 ## :memo: License
 
-This project is under the MIT license. See the [LICENSE](https://github.com/fabianoi/pokedex-store/blob/main/LICENSE) for more information.
+This project is under the MIT license. See the [LICENSE](https://github.com/ifabianoi/pokedex-store/blob/main/LICENSE) for more information.
 
 ---
 
