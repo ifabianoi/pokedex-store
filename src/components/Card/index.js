@@ -1,15 +1,17 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 
+import Button from "../Button";
+
 import { ListItem, Loader } from './card.styles';
 import { capitalize } from '../../utils/capitalize';
+import { formatPrice } from '../../utils/formatPrice';
 import notfound from '../../assets/images/img404.jpg';
 import pokeball from '../../assets/images/pokeball_gray.png'
-import pokeload from '../../assets/images/pokeload.gif'
 
 import axios from 'axios';
 
-export default function Card({ url, price }) {
+export default function Card({ url, price, addCart, data }) {
   const [pokemon, setPokemon] = useState({});
 
   useEffect(() => {
@@ -18,25 +20,37 @@ export default function Card({ url, price }) {
     });
   }, [url]);
 
+  function handleClick() {
+    let data = {
+      id: pokemon.id,
+      count: 1,
+      name: pokemon.name,
+      types: pokemon.types,
+      img: pokemon.sprites.other["official-artwork"].front_default,
+      price: price,
+    };
+
+    addCart(data);
+  }
+
   return pokemon.name ? (
     <ListItem>
       <Link to={`/details/${pokemon.id}`}>
         <div id="link">
           <img
-            src={pokemon.sprites.front_default || notfound}
+            src={pokemon.sprites.other["official-artwork"].front_default || notfound}
             alt={pokemon.name}
           />
           <strong>{capitalize(pokemon.name)}</strong>
-          <span>{price}</span>
+          <span>{formatPrice(price)}</span>
         </div>
       </Link>
-      <button type="button">
-        <div>
-          <img src={pokeball} alt="Logo PokéDex" />
-        </div>
-
-        <span>CAPTURAR</span>
-      </button>
+      <Button
+              label="CAPTURAR"
+              onClick={handleClick}
+              type="primmary"
+      />
+      <img id="pokeball" src={pokeball} alt="Logo PokéDex" />
     </ListItem>
   ) : (
     <Loader />

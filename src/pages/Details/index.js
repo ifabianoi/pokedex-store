@@ -35,7 +35,7 @@ export default function Details() {
       <section>
         <div id="img">
           <img
-            src={pokemon.sprites.front_default || notfound}
+            src={pokemon.sprites.other["official-artwork"].front_default || notfound}
             alt={pokemon.name}
           />
         </div>
@@ -84,9 +84,6 @@ export default function Details() {
           </div>
         </div>
       </section>
-      <footer>
-        <button type="button">Capturar</button>
-      </footer>
     </Container>
   ) : (
     <Loader />

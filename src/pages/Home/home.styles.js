@@ -42,6 +42,64 @@ export const Border = styled.div`
     overflow: auto;
     max-height: 300px;
   }
+
+  div.cart-item {
+    position: relative;
+    cursor: pointer;
+    width: 100%;
+    height: 150px;
+    padding: 20px 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 20px;
+    border-bottom: 1px solid rgba(0,0,0,.3);
+  
+    img {
+      height: 90px;
+      width: 90px;
+      object-fit: contain;
+    }
+    div.cart-item-info {
+      margin-left: 10px;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+      h3 {
+        font-size: 16px;
+        font-weight: 600;
+        color: #12121d;
+        text-transform: capitalize;
+      }
+      span {
+        font-weight: 500;
+        font-size: 10px;
+        text-transform: capitalize;
+        color: rgba(0,0,0,.6);
+        padding: 2px 4px;
+        border-radius: 5px;
+        margin: 0 5px 5px 0;
+      }
+      div.cart-item-btns {
+        display: flex;
+        button {
+          cursor: pointer;
+          width: 60px;
+          height: 50px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          background: #cd121f;
+          border: none;
+          border-radius: 5px;
+          margin: 5px;
+          transition: all .3s ease;
+        }
+      }
+    }
+
+  }
 `;
 
 export const Container = styled.div`

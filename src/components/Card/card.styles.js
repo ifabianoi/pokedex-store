@@ -51,7 +51,7 @@ export const ListItem = styled.li`
     display: flex;
     align-items: center;
     transition: 0.2s;
-    width: 65% !important;
+    width: 60% !important;
     margin: 0 auto;
     &:hover {
       filter: brightness(80%);
@@ -69,10 +69,13 @@ export const ListItem = styled.li`
       text-align: center;
       font-weight: bold;
       padding: 0 5px;
-    }
-    img {
-      width: 15px;
-    }
+    }   
+  }
+  img#pokeball {
+    position: relative;
+    width: 20px;
+    left: 150px;
+    top: -23px;
   }
 `;
 
